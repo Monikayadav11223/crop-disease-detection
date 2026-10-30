@@ -1,0 +1,50 @@
+{
+  "dataset_name": "dataset.csv",
+  "source": "HCLTech Career Shaper - Project 35",
+  "initial_rows": 500,
+  "initial_columns": 7,
+  "cleaned_rows": 500,
+  "cleaned_columns": 11,
+  "duplicates_detected": 0,
+  "missing_values": {
+    "image_id": 0,
+    "crop_type": 0,
+    "disease_label": 0,
+    "confidence_score": 0,
+    "severity": 0,
+    "leaf_area_cm2": 0,
+    "batch_id": 0
+  },
+  "domain_anomalies_detected": {
+    "healthy_records_with_severity": 69,
+    "diseased_records_with_none_severity": 134
+  },
+  "cleaning_actions_taken": [
+    "Harmonized 69 Healthy records with illogical severity (Mild/Moderate/Severe) to 'None'.",
+    "Preserved original field values under 'original_severity' for transparency and audit compliance.",
+    "Generated 'severity_anomaly_flag' boolean indicator to pinpoint data recording errors.",
+    "Verified numerical intervals: confidence_score strictly bounded in [0.701, 0.999], leaf_area_cm2 in [10.0, 79.8] cm^2.",
+    "Engineered derived features: 'is_healthy' (boolean) and 'risk_level' ('None', 'Low', 'Medium', 'High')."
+  ],
+  "class_distribution": {
+    "Healthy": 95,
+    "Early_Blight": 115,
+    "Late_Blight": 99,
+    "Leaf_Scorch": 97,
+    "Bacterial_Spot": 94
+  },
+  "crop_distribution": {
+    "Tomato": 105,
+    "Potato": 102,
+    "Pepper": 100,
+    "Corn": 100,
+    "Apple": 93
+  },
+  "severity_cleaned_distribution": {
+    "None": 229,
+    "Mild": 116,
+    "Moderate": 82,
+    "Severe": 73
+  },
+  "batch_count": 20
+}

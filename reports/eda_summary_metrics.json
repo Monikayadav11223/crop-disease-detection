@@ -1,0 +1,67 @@
+{
+  "dataset_shape": {
+    "rows": 500,
+    "columns": 11
+  },
+  "crops": {
+    "Tomato": 123,
+    "Potato": 97,
+    "Pepper": 97,
+    "Corn": 92,
+    "Apple": 91
+  },
+  "diseases": {
+    "Early_Blight": 107,
+    "Late_Blight": 105,
+    "Healthy": 99,
+    "Leaf_Scorch": 97,
+    "Bacterial_Spot": 92
+  },
+  "cleaned_severity": {
+    "Mild": 103,
+    "Severe": 98,
+    "Moderate": 89
+  },
+  "leaf_area_stats": {
+    "mean": 44.5972,
+    "std": 21.007358004772552,
+    "min": 10.0,
+    "25%": 27.175,
+    "50%": 43.5,
+    "75%": 63.925,
+    "max": 79.8
+  },
+  "confidence_stats": {
+    "mean": 0.851604,
+    "std": 0.0842862237796787,
+    "min": 0.701,
+    "median": 0.858,
+    "max": 0.999
+  },
+  "anomalies": {
+    "healthy_with_severity_in_raw": 99,
+    "diseased_with_none_in_raw": 0
+  },
+  "batch_distribution": {
+    "BATCH013": 33,
+    "BATCH020": 32,
+    "BATCH017": 31,
+    "BATCH011": 31,
+    "BATCH008": 30,
+    "BATCH003": 29,
+    "BATCH019": 29,
+    "BATCH006": 29,
+    "BATCH002": 25,
+    "BATCH001": 25,
+    "BATCH005": 24,
+    "BATCH007": 24,
+    "BATCH010": 23,
+    "BATCH004": 23,
+    "BATCH014": 22,
+    "BATCH012": 20,
+    "BATCH009": 19,
+    "BATCH015": 19,
+    "BATCH016": 19,
+    "BATCH018": 13
+  }
+}

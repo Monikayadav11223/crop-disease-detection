@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 480" width="100%" height="100%" style="background:#ffffff; font-family:'Segoe UI', Arial, sans-serif;">
+  <text x="425" y="35" fill="#1b4d3e" font-size="18" font-weight="bold" text-anchor="middle">Figure 2: HCL Metadata Quality &amp; Logical Consistency Audit (N=500)</text>
+
+  <!-- Left: Main Breakdown Bar Chart -->
+  <g transform="translate(50, 70)">
+    <rect x="0" y="0" width="460" height="350" rx="8" fill="#fcfcfc" stroke="#e0e0e0"/>
+    <text x="230" y="30" fill="#2c3e50" font-size="14" font-weight="bold" text-anchor="middle">Record Consistency Breakdown</text>
+
+    <!-- Grid lines -->
+    <line x1="50" y1="60" x2="430" y2="60" stroke="#f0f0f0"/>
+    <text x="40" y="64" fill="#888888" font-size="11" text-anchor="end">350</text>
+    <line x1="50" y1="120" x2="430" y2="120" stroke="#f0f0f0"/>
+    <text x="40" y="124" fill="#888888" font-size="11" text-anchor="end">250</text>
+    <line x1="50" y1="180" x2="430" y2="180" stroke="#f0f0f0"/>
+    <text x="40" y="184" fill="#888888" font-size="11" text-anchor="end">150</text>
+    <line x1="50" y1="240" x2="430" y2="240" stroke="#f0f0f0"/>
+    <text x="40" y="244" fill="#888888" font-size="11" text-anchor="end">50</text>
+    <line x1="50" y1="270" x2="430" y2="270" stroke="#cccccc" stroke-width="1.5"/>
+    <text x="40" y="274" fill="#888888" font-size="11" text-anchor="end">0</text>
+
+    <!-- Bar 1: Clean & Consistent (297) -> height = (297/350)*210 = 178px -->
+    <rect x="75" y="92" width="85" height="178" fill="#2ecc71" rx="4"/>
+    <text x="117" y="84" fill="#27ae60" font-size="12" font-weight="bold" text-anchor="middle">297 (59.4%)</text>
+    <text x="117" y="295" fill="#333333" font-size="11" text-anchor="middle">Fully Valid</text>
+    <text x="117" y="310" fill="#777777" font-size="9" text-anchor="middle">Consistent Data</text>
+
+    <!-- Bar 2: Diseased w/ Unspecified Severity (134) -> height = (134/350)*210 = 80px -->
+    <rect x="190" y="190" width="85" height="80" fill="#f39c12" rx="4"/>
+    <text x="232" y="182" fill="#d35400" font-size="12" font-weight="bold" text-anchor="middle">134 (26.8%)</text>
+    <text x="232" y="295" fill="#333333" font-size="11" text-anchor="middle">Missing Severity</text>
+    <text x="232" y="310" fill="#777777" font-size="9" text-anchor="middle">Active Disease</text>
+
+    <!-- Bar 3: Healthy w/ Severity Anomaly (69) -> height = (69/350)*210 = 41px -->
+    <rect x="305" y="229" width="85" height="41" fill="#e74c3c" rx="4"/>
+    <text x="347" y="221" fill="#c0392b" font-size="12" font-weight="bold" text-anchor="middle">69 (13.8%)</text>
+    <text x="347" y="295" fill="#333333" font-size="11" text-anchor="middle">Contradictory</text>
+    <text x="347" y="310" fill="#777777" font-size="9" text-anchor="middle">Healthy + Severity</text>
+  </g>
+
+  <!-- Right: Data Cleaning Actions & Domain Decisions -->
+  <g transform="translate(530, 70)">
+    <rect x="0" y="0" width="280" height="350" rx="8" fill="#f8f9fa" stroke="#bdc3c7"/>
+    <rect x="0" y="0" width="280" height="35" rx="8" fill="#34495e"/>
+    <text x="140" y="23" fill="#ffffff" font-size="13" font-weight="bold" text-anchor="middle">Cleaning Pipeline Decisions</text>
+
+    <text x="15" y="60" fill="#c0392b" font-size="12" font-weight="bold">1. Contradiction Resolution</text>
+    <text x="15" y="78" fill="#555555" font-size="11">• 69 records labeled "Healthy"</text>
+    <text x="15" y="93" fill="#555555" font-size="11">  assigned Mild/Mod/Severe.</text>
+    <text x="15" y="108" fill="#27ae60" font-size="11" font-weight="bold">✓ Action: Harmonized to 'None'.</text>
+    <text x="15" y="123" fill="#555555" font-size="10">  Logged severity_anomaly_flag=True.</text>
+
+    <text x="15" y="155" fill="#d35400" font-size="12" font-weight="bold">2. Unspecified Severity</text>
+    <text x="15" y="173" fill="#555555" font-size="11">• 134 diseased leaves with 'None'</text>
+    <text x="15" y="188" fill="#555555" font-size="11">  severity retained with</text>
+    <text x="15" y="203" fill="#27ae60" font-size="11" font-weight="bold">✓ Action: Imputed risk_level='Medium'.</text>
+    <text x="15" y="218" fill="#555555" font-size="10">  Audit trail preserved.</text>
+
+    <text x="15" y="250" fill="#2980b9" font-size="12" font-weight="bold">3. Range &amp; Schema Checks</text>
+    <text x="15" y="268" fill="#555555" font-size="11">• Confidence: [0.701, 0.999] (Valid)</text>
+    <text x="15" y="283" fill="#555555" font-size="11">• Leaf Area: [10.0, 79.8] cm² (Valid)</text>
+    <text x="15" y="298" fill="#555555" font-size="11">• Missing / Null Values: 0 (Zero)</text>
+    <text x="15" y="313" fill="#555555" font-size="11">• Duplicate Image IDs: 0 (Zero)</text>
+    <text x="15" y="333" fill="#27ae60" font-size="11" font-weight="bold">✓ Cleaned CSV: 100% Reliable</text>
+  </g>
+
+  <text x="425" y="450" fill="#777777" font-size="11" text-anchor="middle">Data hygiene protocol compliant with HCLTech Career Shaper Phase 2 guidelines</text>
+</svg>

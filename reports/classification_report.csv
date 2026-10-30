@@ -1,0 +1,17 @@
+class,precision,recall,f1_score,support
+Apple___healthy,0.981,0.978,0.979,92
+Apple___Apple_scab,0.942,0.951,0.946,82
+Apple___Black_rot,0.963,0.948,0.955,77
+Corn___healthy,0.975,0.982,0.978,100
+Corn___Common_rust,0.958,0.966,0.962,89
+Corn___Northern_Leaf_Blight,0.938,0.929,0.933,84
+Pepper__bell___healthy,0.962,0.958,0.960,95
+Pepper__bell___Bacterial_spot,0.950,0.945,0.947,91
+Potato___healthy,0.988,0.976,0.982,85
+Potato___Early_blight,0.964,0.955,0.959,110
+Potato___Late_blight,0.949,0.962,0.955,98
+Tomato___healthy,0.972,0.980,0.976,105
+Tomato___Early_blight,0.953,0.948,0.950,115
+Tomato___Late_blight,0.945,0.958,0.951,102
+Tomato___Bacterial_spot,0.948,0.939,0.943,98
+Tomato___Leaf_Mold,0.957,0.950,0.953,87

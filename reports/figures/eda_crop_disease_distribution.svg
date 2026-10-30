@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 450" width="100%" height="100%" style="background:#ffffff; font-family:'Segoe UI', Arial, sans-serif;">
+  <text x="450" y="32" fill="#1b4d3e" font-size="18" font-weight="bold" text-anchor="middle">Figure 1: Crop and Disease Class Distribution in HCL Metadata (N=500)</text>
+  
+  <!-- Left Subplot: Crop Distribution -->
+  <g transform="translate(60, 60)">
+    <rect x="0" y="0" width="360" height="340" rx="8" fill="#fcfdfd" stroke="#e0e0e0"/>
+    <text x="180" y="30" fill="#2c3e50" font-size="14" font-weight="bold" text-anchor="middle">Crop Specimen Frequency</text>
+    
+    <!-- Y-Axis Grid Lines & Labels -->
+    <line x1="60" y1="60" x2="330" y2="60" stroke="#f0f0f0" stroke-width="1"/>
+    <text x="50" y="64" fill="#888888" font-size="11" text-anchor="end">120</text>
+    <line x1="60" y1="120" x2="330" y2="120" stroke="#f0f0f0" stroke-width="1"/>
+    <text x="50" y="124" fill="#888888" font-size="11" text-anchor="end">90</text>
+    <line x1="60" y1="180" x2="330" y2="180" stroke="#f0f0f0" stroke-width="1"/>
+    <text x="50" y="184" fill="#888888" font-size="11" text-anchor="end">60</text>
+    <line x1="60" y1="240" x2="330" y2="240" stroke="#f0f0f0" stroke-width="1"/>
+    <text x="50" y="244" fill="#888888" font-size="11" text-anchor="end">30</text>
+    <line x1="60" y1="290" x2="330" y2="290" stroke="#cccccc" stroke-width="1.5"/>
+    <text x="50" y="294" fill="#888888" font-size="11" text-anchor="end">0</text>
+
+    <!-- Bars: Tomato(105), Potato(102), Pepper(100), Corn(100), Apple(93) -->
+    <!-- Scale: height = (count / 120) * 230 -->
+    <!-- Tomato: 105 -> 201px -->
+    <rect x="75" y="89" width="38" height="201" fill="#27ae60" rx="3"/>
+    <text x="94" y="81" fill="#27ae60" font-size="11" font-weight="bold" text-anchor="middle">105</text>
+    <text x="94" y="310" fill="#333333" font-size="11" text-anchor="middle">Tomato</text>
+
+    <!-- Potato: 102 -> 195px -->
+    <rect x="128" y="95" width="38" height="195" fill="#2ecc71" rx="3"/>
+    <text x="147" y="87" fill="#2ecc71" font-size="11" font-weight="bold" text-anchor="middle">102</text>
+    <text x="147" y="310" fill="#333333" font-size="11" text-anchor="middle">Potato</text>
+
+    <!-- Pepper: 100 -> 191px -->
+    <rect x="181" y="99" width="38" height="191" fill="#1abc9c" rx="3"/>
+    <text x="200" y="91" fill="#1abc9c" font-size="11" font-weight="bold" text-anchor="middle">100</text>
+    <text x="200" y="310" fill="#333333" font-size="11" text-anchor="middle">Pepper</text>
+
+    <!-- Corn: 100 -> 191px -->
+    <rect x="234" y="99" width="38" height="191" fill="#3498db" rx="3"/>
+    <text x="253" y="91" fill="#3498db" font-size="11" font-weight="bold" text-anchor="middle">100</text>
+    <text x="253" y="310" fill="#333333" font-size="11" text-anchor="middle">Corn</text>
+
+    <!-- Apple: 93 -> 178px -->
+    <rect x="287" y="112" width="38" height="178" fill="#9b59b6" rx="3"/>
+    <text x="306" y="104" fill="#9b59b6" font-size="11" font-weight="bold" text-anchor="middle">93</text>
+    <text x="306" y="310" fill="#333333" font-size="11" text-anchor="middle">Apple</text>
+  </g>
+
+  <!-- Right Subplot: Disease Label Distribution -->
+  <g transform="translate(480, 60)">
+    <rect x="0" y="0" width="380" height="340" rx="8" fill="#fcfdfd" stroke="#e0e0e0"/>
+    <text x="190" y="30" fill="#2c3e50" font-size="14" font-weight="bold" text-anchor="middle">Pathology &amp; Condition Distribution</text>
+    
+    <!-- Y-Axis Grid Lines & Labels -->
+    <line x1="60" y1="60" x2="350" y2="60" stroke="#f0f0f0" stroke-width="1"/>
+    <text x="50" y="64" fill="#888888" font-size="11" text-anchor="end">120</text>
+    <line x1="60" y1="120" x2="350" y2="120" stroke="#f0f0f0" stroke-width="1"/>
+    <text x="50" y="124" fill="#888888" font-size="11" text-anchor="end">90</text>
+    <line x1="60" y1="180" x2="350" y2="180" stroke="#f0f0f0" stroke-width="1"/>
+    <text x="50" y="184" fill="#888888" font-size="11" text-anchor="end">60</text>
+    <line x1="60" y1="240" x2="350" y2="240" stroke="#f0f0f0" stroke-width="1"/>
+    <text x="50" y="244" fill="#888888" font-size="11" text-anchor="end">30</text>
+    <line x1="60" y1="290" x2="350" y2="290" stroke="#cccccc" stroke-width="1.5"/>
+    <text x="50" y="294" fill="#888888" font-size="11" text-anchor="end">0</text>
+
+    <!-- Bars: Early_Blight(115), Late_Blight(99), Leaf_Scorch(97), Healthy(95), Bacterial_Spot(94) -->
+    <!-- Early_Blight: 115 -> 220px -->
+    <rect x="75" y="70" width="42" height="220" fill="#e74c3c" rx="3"/>
+    <text x="96" y="62" fill="#e74c3c" font-size="11" font-weight="bold" text-anchor="middle">115</text>
+    <text x="96" y="310" fill="#333333" font-size="10" text-anchor="middle">Early Blt</text>
+
+    <!-- Late_Blight: 99 -> 189px -->
+    <rect x="133" y="101" width="42" height="189" fill="#e67e22" rx="3"/>
+    <text x="154" y="93" fill="#e67e22" font-size="11" font-weight="bold" text-anchor="middle">99</text>
+    <text x="154" y="310" fill="#333333" font-size="10" text-anchor="middle">Late Blt</text>
+
+    <!-- Leaf_Scorch: 97 -> 185px -->
+    <rect x="191" y="105" width="42" height="185" fill="#f39c12" rx="3"/>
+    <text x="212" y="97" fill="#f39c12" font-size="11" font-weight="bold" text-anchor="middle">97</text>
+    <text x="212" y="310" fill="#333333" font-size="10" text-anchor="middle">Scorch</text>
+
+    <!-- Healthy: 95 -> 182px -->
+    <rect x="249" y="108" width="42" height="182" fill="#2ecc71" rx="3"/>
+    <text x="270" y="100" fill="#2ecc71" font-size="11" font-weight="bold" text-anchor="middle">95</text>
+    <text x="270" y="310" fill="#333333" font-size="10" text-anchor="middle">Healthy</text>
+
+    <!-- Bacterial_Spot: 94 -> 180px -->
+    <rect x="307" y="110" width="42" height="180" fill="#8e44ad" rx="3"/>
+    <text x="328" y="102" fill="#8e44ad" font-size="11" font-weight="bold" text-anchor="middle">94</text>
+    <text x="328" y="310" fill="#333333" font-size="10" text-anchor="middle">Bact Spot</text>
+  </g>
+  
+  <text x="450" y="425" fill="#777777" font-size="11" text-anchor="middle">Balanced stratified distribution across five crops and five pathological conditions (N=500)</text>
+</svg>

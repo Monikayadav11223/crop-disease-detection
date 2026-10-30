@@ -1,0 +1,8 @@
+column_name,data_type,sample_value_1,sample_value_2,sample_value_3,nullable,description_fill_in
+image_id,String (Alphanumeric),IMG00001,IMG00002,IMG00003,No,"Unique identifier for the leaf image inspection record in the batch (Format: IMG followed by 5-digit sequence)."
+crop_type,Categorical (String),Potato,Tomato,Pepper,No,"Botanical crop host category of the inspected leaf specimen (Valid categories: Apple, Corn, Pepper, Potato, Tomato)."
+disease_label,Categorical (String),Early_Blight,Leaf_Scorch,Healthy,No,"Pathological diagnosis or condition classified on the leaf (Valid classes: Bacterial_Spot, Early_Blight, Late_Blight, Leaf_Scorch, Healthy)."
+confidence_score,Float (Numeric),0.998,0.852,0.728,No,"Algorithmic prediction probability score bounded between 0.000 and 1.000 representing diagnosis certainty."
+severity,Categorical (String),Severe,None,Mild,Yes,"Qualitative assessment of visual infection extent or damage (Categories: None, Mild, Moderate, Severe; 'None' for healthy or uninfected leaves)."
+leaf_area_cm2,Float (Numeric),27.1,11.0,53.3,No,"Physical surface area of the sampled leaf blade measured in square centimeters (cm^2)."
+batch_id,String (Alphanumeric),BATCH007,BATCH013,BATCH019,No,"Identifier representing the agricultural field data collection session or batch run (Format: BATCH followed by 3-digit sequence; range BATCH001 to BATCH020)."

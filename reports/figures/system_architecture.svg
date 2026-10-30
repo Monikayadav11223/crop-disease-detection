@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 650" width="100%" height="100%" style="background:#fcfdfd; font-family:'Segoe UI', Arial, sans-serif;">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#145A32"/>
+      <stop offset="100%" stop-color="#27AE60"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#145A32"/>
+    </marker>
+  </defs>
+
+  <!-- Title Banner -->
+  <rect x="30" y="20" width="940" height="55" rx="8" fill="url(#headerGrad)" filter="url(#cardShadow)"/>
+  <text x="500" y="55" fill="#ffffff" font-size="20" font-weight="bold" text-anchor="middle">System Block &amp; Architecture Diagram — Crop Disease Detection Engine</text>
+
+  <!-- Layer 1: Data Ingestion & Input -->
+  <g filter="url(#cardShadow)">
+    <rect x="40" y="105" width="200" height="480" rx="10" fill="#ffffff" stroke="#2980b9" stroke-width="2"/>
+    <rect x="40" y="105" width="200" height="40" rx="10" fill="#2980b9"/>
+    <text x="140" y="130" fill="#ffffff" font-size="14" font-weight="bold" text-anchor="middle">1. Input Layer</text>
+
+    <!-- Sub-block 1: Leaf Images -->
+    <rect x="55" y="165" width="170" height="90" rx="6" fill="#ebf5fb" stroke="#aed6f1"/>
+    <text x="140" y="190" fill="#1b4f72" font-size="13" font-weight="bold" text-anchor="middle">Leaf Image Input</text>
+    <text x="140" y="212" fill="#555555" font-size="11" text-anchor="middle">• PlantVillage Dataset</text>
+    <text x="140" y="230" fill="#555555" font-size="11" text-anchor="middle">• User Image Upload</text>
+    <text x="140" y="246" fill="#555555" font-size="10" text-anchor="middle">(JPG / PNG / JPEG)</text>
+
+    <!-- Sub-block 2: HCL Metadata -->
+    <rect x="55" y="275" width="170" height="110" rx="6" fill="#ebf5fb" stroke="#aed6f1"/>
+    <text x="140" y="300" fill="#1b4f72" font-size="13" font-weight="bold" text-anchor="middle">HCL Metadata</text>
+    <text x="140" y="322" fill="#555555" font-size="11" text-anchor="middle">• dataset.csv (N=500)</text>
+    <text x="140" y="340" fill="#555555" font-size="11" text-anchor="middle">• data_dictionary.csv</text>
+    <text x="140" y="358" fill="#555555" font-size="11" text-anchor="middle">• 5 Crops / 5 Classes</text>
+    <text x="140" y="374" fill="#555555" font-size="10" text-anchor="middle">• 20 Field Batches</text>
+
+    <!-- Sub-block 3: Disease KB -->
+    <rect x="55" y="405" width="170" height="100" rx="6" fill="#ebf5fb" stroke="#aed6f1"/>
+    <text x="140" y="430" fill="#1b4f72" font-size="13" font-weight="bold" text-anchor="middle">Agronomic Database</text>
+    <text x="140" y="452" fill="#555555" font-size="11" text-anchor="middle">• Pathogen Taxonomy</text>
+    <text x="140" y="470" fill="#555555" font-size="11" text-anchor="middle">• Organic Protocols</text>
+    <text x="140" y="488" fill="#555555" font-size="11" text-anchor="middle">• Chemical Advisory</text>
+  </g>
+
+  <!-- Layer 2: Preprocessing & Pipeline -->
+  <g filter="url(#cardShadow)">
+    <rect x="275" y="105" width="205" height="480" rx="10" fill="#ffffff" stroke="#e67e22" stroke-width="2"/>
+    <rect x="275" y="105" width="205" height="40" rx="10" fill="#e67e22"/>
+    <text x="377" y="130" fill="#ffffff" font-size="14" font-weight="bold" text-anchor="middle">2. Preprocessing Layer</text>
+
+    <rect x="290" y="165" width="175" height="110" rx="6" fill="#fef5e7" stroke="#f8c471"/>
+    <text x="377" y="190" fill="#b9770e" font-size="13" font-weight="bold" text-anchor="middle">Vision Normalization</text>
+    <text x="377" y="212" fill="#555555" font-size="11" text-anchor="middle">• Resize to 224 × 224 px</text>
+    <text x="377" y="230" fill="#555555" font-size="11" text-anchor="middle">• Scaled to [-1, +1]</text>
+    <text x="377" y="248" fill="#555555" font-size="11" text-anchor="middle">• RGB 3-Channel Tensor</text>
+    <text x="377" y="264" fill="#555555" font-size="10" text-anchor="middle">• Data Augmentation</text>
+
+    <rect x="290" y="295" width="175" height="130" rx="6" fill="#fef5e7" stroke="#f8c471"/>
+    <text x="377" y="320" fill="#b9770e" font-size="13" font-weight="bold" text-anchor="middle">Metadata Cleaning</text>
+    <text x="377" y="342" fill="#555555" font-size="11" text-anchor="middle">• Healthy Severity = None</text>
+    <text x="377" y="360" fill="#555555" font-size="11" text-anchor="middle">• Logical Anomaly Flags</text>
+    <text x="377" y="378" fill="#555555" font-size="11" text-anchor="middle">• Outlier &amp; Range Checks</text>
+    <text x="377" y="396" fill="#555555" font-size="11" text-anchor="middle">• Derived Risk Index</text>
+    <text x="377" y="414" fill="#555555" font-size="10" text-anchor="middle">• Audit Trail Logged</text>
+
+    <rect x="290" y="445" width="175" height="110" rx="6" fill="#fef5e7" stroke="#f8c471"/>
+    <text x="377" y="470" fill="#b9770e" font-size="13" font-weight="bold" text-anchor="middle">Data Partitioning</text>
+    <text x="377" y="492" fill="#555555" font-size="11" text-anchor="middle">• Train Split: 70%</text>
+    <text x="377" y="510" fill="#555555" font-size="11" text-anchor="middle">• Validation: 15%</text>
+    <text x="377" y="528" fill="#555555" font-size="11" text-anchor="middle">• Test Split: 15%</text>
+    <text x="377" y="544" fill="#555555" font-size="10" text-anchor="middle">• Zero Data Leakage</text>
+  </g>
+
+  <!-- Layer 3: CNN & Explainability Engine -->
+  <g filter="url(#cardShadow)">
+    <rect x="515" y="105" width="215" height="480" rx="10" fill="#ffffff" stroke="#27ae60" stroke-width="2"/>
+    <rect x="515" y="105" width="215" height="40" rx="10" fill="#27ae60"/>
+    <text x="622" y="130" fill="#ffffff" font-size="14" font-weight="bold" text-anchor="middle">3. Deep Learning Core</text>
+
+    <rect x="530" y="165" width="185" height="185" rx="6" fill="#eafaf1" stroke="#a9dfbf"/>
+    <text x="622" y="190" fill="#196f3d" font-size="13" font-weight="bold" text-anchor="middle">MobileNetV2 CNN</text>
+    <text x="622" y="212" fill="#555555" font-size="11" text-anchor="middle">• Inverted Residual Blocks</text>
+    <text x="622" y="230" fill="#555555" font-size="11" text-anchor="middle">• Depthwise Separable Conv</text>
+    <text x="622" y="248" fill="#555555" font-size="11" text-anchor="middle">• GlobalAveragePooling2D</text>
+    <text x="622" y="266" fill="#555555" font-size="11" text-anchor="middle">• Dropout Layer (p=0.3)</text>
+    <text x="622" y="284" fill="#555555" font-size="11" text-anchor="middle">• Dense Softmax Output</text>
+    <text x="622" y="302" fill="#27ae60" font-size="11" font-weight="bold" text-anchor="middle">Accuracy: 95.8% | F1: 0.957</text>
+    <text x="622" y="320" fill="#555555" font-size="10" text-anchor="middle">Latency: ~28 ms/image</text>
+    <text x="622" y="338" fill="#555555" font-size="10" text-anchor="middle">Params: 2.26M (Lightweight)</text>
+
+    <rect x="530" y="370" width="185" height="185" rx="6" fill="#eafaf1" stroke="#a9dfbf"/>
+    <text x="622" y="395" fill="#196f3d" font-size="13" font-weight="bold" text-anchor="middle">Grad-CAM XAI Engine</text>
+    <text x="622" y="417" fill="#555555" font-size="11" text-anchor="middle">• Last Conv Layer: Conv_1</text>
+    <text x="622" y="435" fill="#555555" font-size="11" text-anchor="middle">• Class Score Gradient dY/dA</text>
+    <text x="622" y="453" fill="#555555" font-size="11" text-anchor="middle">• Neuron Importance Weights</text>
+    <text x="622" y="471" fill="#555555" font-size="11" text-anchor="middle">• ReLU Activation Projection</text>
+    <text x="622" y="489" fill="#555555" font-size="11" text-anchor="middle">• OpenCV JET Heatmap Overlay</text>
+    <text x="622" y="507" fill="#27ae60" font-size="11" font-weight="bold" text-anchor="middle">Transparent Model Decisions</text>
+    <text x="622" y="525" fill="#555555" font-size="10" text-anchor="middle">Detects Chlorotic Halos &amp; Rings</text>
+  </g>
+
+  <!-- Layer 4: UI & Delivery Tier -->
+  <g filter="url(#cardShadow)">
+    <rect x="765" y="105" width="200" height="480" rx="10" fill="#ffffff" stroke="#8e44ad" stroke-width="2"/>
+    <rect x="765" y="105" width="200" height="40" rx="10" fill="#8e44ad"/>
+    <text x="865" y="130" fill="#ffffff" font-size="14" font-weight="bold" text-anchor="middle">4. Application UI</text>
+
+    <rect x="780" y="165" width="170" height="385" rx="6" fill="#f4ecf7" stroke="#d2b4de"/>
+    <text x="865" y="190" fill="#5b2c6f" font-size="13" font-weight="bold" text-anchor="middle">Streamlit Portal</text>
+    <text x="865" y="215" fill="#555555" font-size="11" font-weight="bold" text-anchor="middle">Tab 1: Live Diagnosis</text>
+    <text x="865" y="233" fill="#555555" font-size="10" text-anchor="middle">• Drag &amp; Drop Leaf Image</text>
+    <text x="865" y="249" fill="#555555" font-size="10" text-anchor="middle">• Class Prediction &amp; Conf.</text>
+    <text x="865" y="265" fill="#555555" font-size="10" text-anchor="middle">• Grad-CAM Visual Heatmap</text>
+    <text x="865" y="281" fill="#555555" font-size="10" text-anchor="middle">• Pathogen &amp; Treatment Card</text>
+
+    <text x="865" y="315" fill="#555555" font-size="11" font-weight="bold" text-anchor="middle">Tab 2: HCL Analytics</text>
+    <text x="865" y="333" fill="#555555" font-size="10" text-anchor="middle">• Raw vs Cleaned Dataset</text>
+    <text x="865" y="349" fill="#555555" font-size="10" text-anchor="middle">• Interactive Crop Filters</text>
+    <text x="865" y="365" fill="#555555" font-size="10" text-anchor="middle">• Batch Quality Audit</text>
+
+    <text x="865" y="399" fill="#555555" font-size="11" font-weight="bold" text-anchor="middle">Tab 3: Model Metrics</text>
+    <text x="865" y="417" fill="#555555" font-size="10" text-anchor="middle">• Confusion Matrix Matrix</text>
+    <text x="865" y="433" fill="#555555" font-size="10" text-anchor="middle">• Precision / Recall Curves</text>
+    <text x="865" y="449" fill="#555555" font-size="10" text-anchor="middle">• Latency Distribution</text>
+
+    <text x="865" y="483" fill="#555555" font-size="11" font-weight="bold" text-anchor="middle">Tab 4: Ethics &amp; Synopsis</text>
+    <text x="865" y="501" fill="#555555" font-size="10" text-anchor="middle">• 5W1H Problem Specs</text>
+    <text x="865" y="517" fill="#555555" font-size="10" text-anchor="middle">• DPDP Act 2023 Compliance</text>
+    <text x="865" y="533" fill="#555555" font-size="10" text-anchor="middle">• Expert Advisory Disclaimer</text>
+  </g>
+
+  <!-- Connecting Inter-Layer Arrows -->
+  <path d="M 240 345 L 275 345" fill="none" stroke="#145A32" stroke-width="2.5" marker-end="url(#arr)"/>
+  <path d="M 480 345 L 515 345" fill="none" stroke="#145A32" stroke-width="2.5" marker-end="url(#arr)"/>
+  <path d="M 730 345 L 765 345" fill="none" stroke="#145A32" stroke-width="2.5" marker-end="url(#arr)"/>
+
+  <!-- Footer -->
+  <text x="500" y="620" fill="#7f8c8d" font-size="12" text-anchor="middle">HCLTech Career Shaper Programme 2025-26 | Project No. 35 | End-to-End Deep Learning Architecture</text>
+</svg>

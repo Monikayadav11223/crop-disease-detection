@@ -1,0 +1,27 @@
+# HCLTech Career Shaper Programme | Project 35: Crop Disease Detection
+# Python 3.12 Compatible Dependencies
+# Install with: pip install -r requirements.txt
+
+# ── Deep Learning ───────────────────────────────────────────────────────────
+tensorflow-cpu>=2.15.0          # CPU-optimized TensorFlow (use tensorflow for GPU)
+# tensorflow>=2.15.0            # Uncomment for GPU training
+
+# ── Web Application ─────────────────────────────────────────────────────────
+streamlit>=1.28.0
+
+# ── Computer Vision ─────────────────────────────────────────────────────────
+opencv-python-headless>=4.8.0   # Headless (no GUI); replace with opencv-python for desktop
+pillow>=10.0.0
+
+# ── Data Engineering ────────────────────────────────────────────────────────
+numpy>=1.24.0
+pandas>=2.0.0
+scikit-learn>=1.3.0
+scipy>=1.11.0
+
+# ── Visualization ───────────────────────────────────────────────────────────
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# ── Documentation / PDF ─────────────────────────────────────────────────────
+reportlab>=4.0.0

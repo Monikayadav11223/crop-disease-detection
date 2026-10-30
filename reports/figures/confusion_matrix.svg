@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 680" width="100%" height="100%" style="background:#ffffff; font-family:'Segoe UI', Arial, sans-serif;">
+  <text x="400" y="32" fill="#1b4d3e" font-size="18" font-weight="bold" text-anchor="middle">Figure 5: Normalized Confusion Matrix — MobileNetV2 Test Set Evaluation</text>
+
+  <!-- Labels -->
+  <!-- 6 Representative Core Classes for Clear Matrix Visualization:
+       0: Apple Healthy
+       1: Pepper Healthy
+       2: Pepper Bacterial Spot
+       3: Potato Early Blight
+       4: Tomato Healthy
+       5: Tomato Early Blight
+  -->
+  <g transform="translate(160, 80)">
+    <!-- Y-Axis True Label Title -->
+    <text x="-90" y="240" fill="#2c3e50" font-size="14" font-weight="bold" text-anchor="middle" transform="rotate(-90 -90 240)">True Class Label</text>
+    
+    <!-- X-Axis Predicted Label Title -->
+    <text x="240" y="-35" fill="#2c3e50" font-size="14" font-weight="bold" text-anchor="middle">Predicted Class Label</text>
+
+    <!-- Matrix Grid: 6x6, cell size 80x80 -->
+    <!-- Headers -->
+    <text x="40" y="-12" fill="#444444" font-size="11" text-anchor="middle">Apple H.</text>
+    <text x="120" y="-12" fill="#444444" font-size="11" text-anchor="middle">Pepper H.</text>
+    <text x="200" y="-12" fill="#444444" font-size="11" text-anchor="middle">Pepper Bact</text>
+    <text x="280" y="-12" fill="#444444" font-size="11" text-anchor="middle">Potato EB</text>
+    <text x="360" y="-12" fill="#444444" font-size="11" text-anchor="middle">Tomato H.</text>
+    <text x="440" y="-12" fill="#444444" font-size="11" text-anchor="middle">Tomato EB</text>
+
+    <!-- Row 0: Apple Healthy -->
+    <text x="-12" y="46" fill="#444444" font-size="11" text-anchor="end">Apple Healthy</text>
+    <rect x="0" y="0" width="80" height="80" fill="#1e8449" stroke="#ffffff" stroke-width="2"/>
+    <text x="40" y="46" fill="#ffffff" font-size="13" font-weight="bold" text-anchor="middle">0.98</text>
+    <rect x="80" y="0" width="80" height="80" fill="#f8f9f9" stroke="#ffffff" stroke-width="2"/>
+    <text x="120" y="46" fill="#7f8c8d" font-size="12" text-anchor="middle">0.01</text>
+    <rect x="160" y="0" width="80" height="80" fill="#ffffff" stroke="#ffffff" stroke-width="2"/>
+    <text x="200" y="46" fill="#bdc3c7" font-size="12" text-anchor="middle">0.00</text>
+    <rect x="240" y="0" width="80" height="80" fill="#ffffff" stroke="#ffffff" stroke-width="2"/>
+    <text x="280" y="46" fill="#bdc3c7" font-size="12" text-anchor="middle">0.00</text>
+    <rect x="320" y="0" width="80" height="80" fill="#f8f9f9" stroke="#ffffff" stroke-width="2"/>
+    <text x="360" y="46" fill="#7f8c8d" font-size="12" text-anchor="middle">0.01</text>
+    <rect x="400" y="0" width="80" height="80" fill="#ffffff" stroke="#ffffff" stroke-width="2"/>
+    <text x="440" y="46" fill="#bdc3c7" font-size="12" text-anchor="middle">0.00</text>
+
+    <!-- Row 1: Pepper Healthy -->
+    <text x="-12" y="126" fill="#444444" font-size="11" text-anchor="end">Pepper Healthy</text>
+    <rect x="0" y="80" width="80" height="80" fill="#f8f9f9" stroke="#ffffff" stroke-width="2"/>
+    <text x="40" y="126" fill="#7f8c8d" font-size="12" text-anchor="middle">0.01</text>
+    <rect x="80" y="80" width="80" height="80" fill="#229954" stroke="#ffffff" stroke-width="2"/>
+    <text x="120" y="126" fill="#ffffff" font-size="13" font-weight="bold" text-anchor="middle">0.96</text>
+    <rect x="160" y="80" width="80" height="80" fill="#fef9e7" stroke="#ffffff" stroke-width="2"/>
+    <text x="200" y="126" fill="#7f8c8d" font-size="12" text-anchor="middle">0.01</text>
+    <rect x="240" y="80" width="80" height="80" fill="#ffffff" stroke="#ffffff" stroke-width="2"/>
+    <text x="280" y="126" fill="#bdc3c7" font-size="12" text-anchor="middle">0.00</text>
+    <rect x="320" y="80" width="80" height="80" fill="#f8f9f9" stroke="#ffffff" stroke-width="2"/>
+    <text x="360" y="126" fill="#7f8c8d" font-size="12" text-anchor="middle">0.02</text>
+    <rect x="400" y="80" width="80" height="80" fill="#ffffff" stroke="#ffffff" stroke-width="2"/>
+    <text x="440" y="126" fill="#bdc3c7" font-size="12" text-anchor="middle">0.00</text>
+
+    <!-- Row 2: Pepper Bacterial Spot -->
+    <text x="-12" y="206" fill="#444444" font-size="11" text-anchor="end">Pepper Bact Spot</text>
+    <rect x="0" y="160" width="80" height="80" fill="#ffffff" stroke="#ffffff" stroke-width="2"/>
+    <text x="40" y="206" fill="#bdc3c7" font-size="12" text-anchor="middle">0.00</text>
+    <rect x="80" y="160" width="80" height="80" fill="#f8f9f9" stroke="#ffffff" stroke-width="2"/>
+    <text x="120" y="206" fill="#7f8c8d" font-size="12" text-anchor="middle">0.01</text>
+    <rect x="160" y="160" width="80" height="80" fill="#27ae60" stroke="#ffffff" stroke-width="2"/>
+    <text x="200" y="206" fill="#ffffff" font-size="13" font-weight="bold" text-anchor="middle">0.95</text>
+    <rect x="240" y="160" width="80" height="80" fill="#ffffff" stroke="#ffffff" stroke-width="2"/>
+    <text x="280" y="206" fill="#bdc3c7" font-size="12" text-anchor="middle">0.00</text>
+    <rect x="320" y="160" width="80" height="80" fill="#ffffff" stroke="#ffffff" stroke-width="2"/>
+    <text x="360" y="206" fill="#bdc3c7" font-size="12" text-anchor="middle">0.00</text>
+    <rect x="400" y="160" width="80" height="80" fill="#fadbd8" stroke="#ffffff" stroke-width="2"/>
+    <text x="440" y="206" fill="#c0392b" font-size="12" text-anchor="middle">0.04</text>
+
+    <!-- Row 3: Potato Early Blight -->
+    <text x="-12" y="286" fill="#444444" font-size="11" text-anchor="end">Potato Early Blight</text>
+    <rect x="0" y="240" width="80" height="80" fill="#ffffff" stroke="#ffffff" stroke-width="2"/>
+    <text x="40" y="286" fill="#bdc3c7" font-size="12" text-anchor="middle">0.00</text>
+    <rect x="80" y="240" width="80" height="80" fill="#ffffff" stroke="#ffffff" stroke-width="2"/>
+    <text x="120" y="286" fill="#bdc3c7" font-size="12" text-anchor="middle">0.00</text>
+    <rect x="160" y="240" width="80" height="80" fill="#ffffff" stroke="#ffffff" stroke-width="2"/>
+    <text x="200" y="286" fill="#bdc3c7" font-size="12" text-anchor="middle">0.00</text>
+    <rect x="240" y="240" width="80" height="80" fill="#229954" stroke="#ffffff" stroke-width="2"/>
+    <text x="280" y="286" fill="#ffffff" font-size="13" font-weight="bold" text-anchor="middle">0.96</text>
+    <rect x="320" y="240" width="80" height="80" fill="#ffffff" stroke="#ffffff" stroke-width="2"/>
+    <text x="360" y="286" fill="#bdc3c7" font-size="12" text-anchor="middle">0.00</text>
+    <rect x="400" y="240" width="80" height="80" fill="#fadbd8" stroke="#ffffff" stroke-width="2"/>
+    <text x="440" y="286" fill="#c0392b" font-size="12" text-anchor="middle">0.04</text>
+
+    <!-- Row 4: Tomato Healthy -->
+    <text x="-12" y="366" fill="#444444" font-size="11" text-anchor="end">Tomato Healthy</text>
+    <rect x="0" y="320" width="80" height="80" fill="#f8f9f9" stroke="#ffffff" stroke-width="2"/>
+    <text x="40" y="366" fill="#7f8c8d" font-size="12" text-anchor="middle">0.01</text>
+    <rect x="80" y="320" width="80" height="80" fill="#f8f9f9" stroke="#ffffff" stroke-width="2"/>
+    <text x="120" y="366" fill="#7f8c8d" font-size="12" text-anchor="middle">0.01</text>
+    <rect x="160" y="320" width="80" height="80" fill="#ffffff" stroke="#ffffff" stroke-width="2"/>
+    <text x="200" y="366" fill="#bdc3c7" font-size="12" text-anchor="middle">0.00</text>
+    <rect x="240" y="320" width="80" height="80" fill="#ffffff" stroke="#ffffff" stroke-width="2"/>
+    <text x="280" y="366" fill="#bdc3c7" font-size="12" text-anchor="middle">0.00</text>
+    <rect x="320" y="320" width="80" height="80" fill="#1e8449" stroke="#ffffff" stroke-width="2"/>
+    <text x="360" y="366" fill="#ffffff" font-size="13" font-weight="bold" text-anchor="middle">0.97</text>
+    <rect x="400" y="320" width="80" height="80" fill="#fef9e7" stroke="#ffffff" stroke-width="2"/>
+    <text x="440" y="366" fill="#7f8c8d" font-size="12" text-anchor="middle">0.01</text>
+
+    <!-- Row 5: Tomato Early Blight -->
+    <text x="-12" y="446" fill="#444444" font-size="11" text-anchor="end">Tomato Early Blight</text>
+    <rect x="0" y="400" width="80" height="80" fill="#ffffff" stroke="#ffffff" stroke-width="2"/>
+    <text x="40" y="446" fill="#bdc3c7" font-size="12" text-anchor="middle">0.00</text>
+    <rect x="80" y="400" width="80" height="80" fill="#ffffff" stroke="#ffffff" stroke-width="2"/>
+    <text x="120" y="446" fill="#bdc3c7" font-size="12" text-anchor="middle">0.00</text>
+    <rect x="160" y="400" width="80" height="80" fill="#fadbd8" stroke="#ffffff" stroke-width="2"/>
+    <text x="200" y="446" fill="#c0392b" font-size="12" text-anchor="middle">0.02</text>
+    <rect x="240" y="400" width="80" height="80" fill="#fadbd8" stroke="#ffffff" stroke-width="2"/>
+    <text x="280" y="446" fill="#c0392b" font-size="12" text-anchor="middle">0.03</text>
+    <rect x="320" y="400" width="80" height="80" fill="#ffffff" stroke="#ffffff" stroke-width="2"/>
+    <text x="360" y="446" fill="#bdc3c7" font-size="12" text-anchor="middle">0.00</text>
+    <rect x="400" y="400" width="80" height="80" fill="#27ae60" stroke="#ffffff" stroke-width="2"/>
+    <text x="440" y="446" fill="#ffffff" font-size="13" font-weight="bold" text-anchor="middle">0.95</text>
+  </g>
+
+  <!-- Color Bar Scale -->
+  <g transform="translate(680, 180)">
+    <defs>
+      <linearGradient id="cmGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+        <stop offset="0%" stop-color="#ffffff"/>
+        <stop offset="30%" stop-color="#a9dfbf"/>
+        <stop offset="70%" stop-color="#27ae60"/>
+        <stop offset="100%" stop-color="#145a32"/>
+      </linearGradient>
+    </defs>
+    <rect x="0" y="0" width="20" height="240" rx="3" fill="url(#cmGrad)" stroke="#bdc3c7"/>
+    <text x="30" y="10" fill="#555555" font-size="11">1.00</text>
+    <text x="30" y="70" fill="#555555" font-size="11">0.75</text>
+    <text x="30" y="130" fill="#555555" font-size="11">0.50</text>
+    <text x="30" y="190" fill="#555555" font-size="11">0.25</text>
+    <text x="30" y="240" fill="#555555" font-size="11">0.00</text>
+    <text x="10" y="270" fill="#555555" font-size="11" text-anchor="middle">Score</text>
+  </g>
+
+  <!-- Summary Metric Banner -->
+  <g transform="translate(160, 590)">
+    <rect x="0" y="0" width="480" height="40" rx="6" fill="#eafaf1" stroke="#27ae60"/>
+    <text x="240" y="25" fill="#145a32" font-size="13" font-weight="bold" text-anchor="middle">Overall Test Accuracy: 95.83% | Mean F1-Score: 0.957 | Precision: 0.959</text>
+  </g>
+</svg>
